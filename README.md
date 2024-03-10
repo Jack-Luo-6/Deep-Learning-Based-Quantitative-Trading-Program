@@ -1,4 +1,4 @@
-# Deep-Learning-Based-Quantitative-Trading-Program
+# Deep-Learning-Based Quantitative Trading Program
 
 This program uses a 40-parameter 4-layer linear neural network with an LSTM to predict the stock market of a company based on Twitter sentiment analysis. In this setting, the sample testing company is Microsoft.
 
