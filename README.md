@@ -4,9 +4,10 @@ This program uses a 40-parameter 4-layer linear neural network with an LSTM to p
 
 The program consists of three sections:
 
-
 The first section is a simple 20-parameter 4-layer linear neural network with an LSTM that takes in past data of 20 days from Microsoft stock and trains itself.
 
 The second section takes into account Twitter sentiment of Microsoft for the past 20 days and trains a 40-parameter 4-layer linear neural network with an LSTM to predict the future stock.
 
 The third section splits the training data set into two fractions: when the stock is going up or when the stock is going down. It then trains two 40-parameter 4 layer neural network, each with an LSTM, to understand the correlation bewteen Twitter sentiment and up-down trends. It then implements a policy search algorithm to determine whether the stock goes up or down with a threshold calculated by taking the median of the Twitter sentiments with the respective data in the up and down fractions. Finally, it predicts the stock market trends of Microsoft.
+
+This program uses Pandas Dataframe methods, TensorFlow, PyPlot, NLP, and web scraping. It is visualized in a plot comparing the actual and the predicted values of the stock market of Microsoft for the next 400 days, where the program performs quite coherrently with the actual data for the first 250 points, but diverges after due to the limited memory of the LSTM.
